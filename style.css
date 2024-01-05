@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bai+Jamjuree:wght@400;500;600;700&family=Metal+Mania&family=Roboto:wght@400;700&display=swap");
+
+@font-face {
+  font-family: myFont;
+  src: url(Kajiro/kk.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+#back {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Images/IMG_7564.JPG);
+  background-size: cover;
+}
+
+#workingspace {
+  width: 80%;
+  height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#nleft img {
+  height: 60px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+#nleft {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+#nright {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+#hero {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+#hleft {
+  min-width: 50%;
+}
+
+#hleft h1 {
+  font-family: MyFont;
+  font-size: 20vh;
+  font-weight: 400;
+}
+
+#hleft button {
+  font-family: MyFont;
+  font-size: 4vh;
+  padding: 1vh 3vh;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+
+#hright {
+  font-size: 0.75rem;
+  display: flex;
+  width: 30vh;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#img_cont {
+  width: 250px;
+  height: 150px;
+  background-image: url(https://images.unsplash.com/photo-1567333126229-db29200c25f1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#hright p {
+  text-align: right;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#hright p:nth-child(4) {
+  margin-top: 70px;
+}
+
+a {
+  position: relative;
+}
+
+a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: aliceblue;
+  position: absolute;
+  bottom: -0.5rem;
+  transition: width 0.3s;
+}
+
+a:hover {
+    color: aliceblue;
+}
+
+a:hover::before {
+  width: 50%;
+}
+
+#arrow {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0 10px;
+    animation: scroll infinite 3s;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-1rem);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0.5rem);
+        opacity: 0;
+    }
+}
